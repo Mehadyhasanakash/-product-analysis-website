@@ -9,6 +9,7 @@ const Reviews = () => {
 
     return (
        <div className='container'>
+           <h1 className='text-center'>coustomer reviews {users.length}</h1>
             <div className=" row row-cols-1 row-cols-md-3 g-4 m-5">
 
             {

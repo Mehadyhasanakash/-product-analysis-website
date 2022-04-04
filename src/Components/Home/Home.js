@@ -33,7 +33,7 @@ const Home = () => {
 
 
             <div className='container m-5'>
-            <h1 className='m-5 text-center'>Coustomar reviews </h1>
+            <h1 className='m-5 text-center'>Coustomar reviews {users.length} </h1>
                 <div className='row row-cols-1 row-cols-md-3 g-4 m-5'>
                    
                            
