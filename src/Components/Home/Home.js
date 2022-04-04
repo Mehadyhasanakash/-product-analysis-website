@@ -1,7 +1,17 @@
-import React from 'react';
+import useUser from '../../Hooks/useUser';
 import image from '../../image.jpg'
+import HomeReviewsDispaly from '../HomeReviewsDispaly/HomeReviewsDispaly';
+
+
+
 
 const Home = () => {
+
+    const  [users, setUsers] = useUser()
+
+
+
+
     return (
         <div className='container mt-5'>
             <div className='row align-items-center'>
@@ -17,6 +27,30 @@ const Home = () => {
                 </div>
 
 
+
+            </div>
+
+
+
+            <div className='container m-5'>
+            <h1 className='m-5 text-center'>Coustomar reviews </h1>
+                <div className='row row-cols-1 row-cols-md-3 g-4 m-5'>
+                   
+                           
+                    {
+                        users.map(user => <HomeReviewsDispaly
+                        
+                        key={user.id}
+                        user ={user}
+                        
+                        ></HomeReviewsDispaly>)
+                    }
+                   
+
+                </div>
+               <div className='text-center mb-5'>
+               <button type="button" class="btn btn-success">All Display reviews</button>
+               </div>
 
             </div>
             
