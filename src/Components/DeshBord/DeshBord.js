@@ -1,9 +1,19 @@
-import React from 'react';
+import useUser from '../../Hooks/useUser';
+import DisplayDeshBoar from '../DisplayDeshBord/DisplayDeshBoar';
+
 
 const DeshBord = () => {
+
+    const [users, setUsers] = useUser()   
+
+   
+    
     return (
         <div>
-            <h1>this is me DeshBord</h1>
+           <DisplayDeshBoar data={users}
+           
+           
+           ></DisplayDeshBoar>
         </div>
     );
 };
