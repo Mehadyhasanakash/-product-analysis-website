@@ -7,6 +7,7 @@ import DeshBord from './Components/DeshBord/DeshBord';
 import Blogs from './Components/Blogs/Blogs';
 import About from './Components/About/About';
 import Nav from './Components/Nav/Nav';
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/deshBord" element={<DeshBord></DeshBord>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/about" element={<About></About>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
 
     </div>

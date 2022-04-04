@@ -1,0 +1,17 @@
+.nav-container a{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    
+    
+}
+.nav-container{
+    margin-top: 20px;
+    background-color: rgb(1, 54, 73);
+    display: flex;
+    justify-content: center;
+}
+.nav-container a:hover{
+    color: rgb(255, 200, 0);
+}
