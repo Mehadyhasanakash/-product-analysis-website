@@ -10,15 +10,15 @@ import Nav from './Components/Nav/Nav';
 
 function App() {
   return (
-    <div >
+    <div>
       <Nav></Nav>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/Home" element={<Home></Home>}></Route>
-        <Route path="/Reviews" element={<Reviews></Reviews>}></Route>
-        <Route path="/DeshBord" element={<DeshBord></DeshBord>}></Route>
-        <Route path="/Blogs" element={<Blogs></Blogs>}></Route>
-        <Route path="/About" element={<About></About>}></Route>
+        <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/reviews" element={<Reviews></Reviews>}></Route>
+        <Route path="/deshBord" element={<DeshBord></DeshBord>}></Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
       </Routes>
 
     </div>
